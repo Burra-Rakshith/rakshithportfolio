@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b252b2c6e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./IMG-20250309-WA0007.jpg" alt="logo" class="logo" width="100px" height="100px">
+                <ul id="sidemenu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Rakshith Kumar</span><br> ???</h1>
+            </div>
+        </div>
+
+
+    </div>
+    <!--about-->
+    <div class="total">
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="./aboutImg.png" width="300px" height="450px">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>"Passionate AIML student and aspiring data scientist with expertise in Python, web
+                            development, and video editing. Enthusiastic about innovation and problem-solving in AI and
+                            technology."</p><br>
+                        <br>
+                        <div class="tab-titles"><span>
+                                <p class="tab-links active-link" onclick="opentab(event,'skills')">Skills</p>
+                                <p class="tab-links" onclick="opentab(event,'projects')">Projects</p>
+                                <p class="tab-links" onclick="opentab(event,'education')">Education</p>
+                            </span>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>
+                                        <h3>Web Development</h3>
+                                    </span>(Html,Css,JS)</li>
+                                <li><span>
+                                        <h3>Python</h3>
+                                    </span></li>
+                                <li><span>
+                                        <h3>SQL </h3>
+                                    </span></li>
+                                <li><span>
+                                        <h3>Natural Language Processing</h3>
+                                    </span> (NLP)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+
+                            <ul>
+                                <li><span>
+                                        <h3>Chatbot creation</h3>
+                                    </span>by using NLP</li>
+                                <li><span>
+                                        <h3>E-Commerce website</h3>
+                                    </span></li>
+                                <li><span>
+                                        <h3>Portfolio Website</h3>
+                                    </span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>
+                                        <h4>2022 - 2026</h4>
+                                    </span>Bachelor of Technology from SVS Group of Instutions ,Bheemaram, Hanamkonda,
+                                    Warangal</li>
+                                <li><span>
+                                        <h4>2020 - 2022</h4>
+                                    </span>Intermediate from Balaji Group of Instutions ,Narsampet,warangal</li>
+                                <li><span>
+                                        <h4>2020</h4>
+                                    </span>SSC From ZPHS Suripally High School, Chennaroapet, Warangal</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--services-->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>web Disign</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>web Disign</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#">learn more</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>web Disign</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        <a href="#">learn more</a>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <!--profile-->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="./email.png">
+                        <div class="layer">
+                            <h3>Email Spam Detection</h3>
+                            <P>A machine learning-based system to classify emails as spam or not spam using NLP
+                                techniques. Trained on real email data using models like Naive Bayes and SVM.</P>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./ChatGPT Image Jul 19, 2025, 08_25_42 AM.png">
+                        <div class="layer">
+                            <h3> Food Ordering System</h3>
+                            <P>Dialogflow + FastAPI + SQL Workbench + Python.
+                                Includes food items, orders, and order tracking.</P>
+                            <a href="https://burra-rakshith.github.io/final-sr-foods/"><i
+                                    class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="./palm 19, 2025, 08_25_50 AM.png">
+                        <div class="layer">
+                            <h3> Palm Wine (Thatti Kallu) Selling Platform</h3>
+                            <P>Custom online platform to support your dad’s business.</P>
+                            <a href="#"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+
+                </div>
+                <a href="#" class="btn">See more</a>
+            </div>
+
+        </div>
+        <!--contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <P> <i class="fa-solid fa-envelope"></i>bskiran630@gmail.com</P>
+                        <p> <i class="fa-solid fa-phone"></i>6309385483</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="./Document 11.pdf" download class="btn btn2">Downlad Cv</a>
+                    </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="your Name" required>
+                            <input type="email" name="email" placeholder="your Email" required>
+
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button class="btn  btn2 btn3">Submit</button>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <script>
+            // Custom remove method definition
+            DOMTokenList.prototype.customRemove = function (className) {
+                if (this.contains(className)) {
+                    this.remove(className);
+                } else {
+                    console.warn();
+                }
+            };
+
+            // Custom add method definition
+            DOMTokenList.prototype.customAdd = function (className) {
+                if (!this.contains(className)) {
+                    this.add(className);
+                } else {
+                    console.warn();
+                }
+            };
+
+            // Use custom methods in your script
+            function opentab(event, tabname) {
+                var tablinks = document.getElementsByClassName("tab-links");
+                var tabcontents = document.getElementsByClassName("tab-contents");
+
+                // Check if tablinks and tabcontents are correctly populated
+                if (!tablinks.length || !tabcontents.length) {
+                    console.error("Tab links or tab contents not found");
+                    return;
+                }
+
+                console.log('tablinks:', tablinks);
+                console.log('tabcontents:', tabcontents);
+
+                for (let tablink of tablinks) {
+                    if (tablink && tablink.classList && typeof tablink.classList.customRemove === 'function') {
+                        console.log('Removing active-link from:', tablink);
+                        tablink.classList.customRemove("active-link");
+                    } else {
+                        console.error("Undefined or invalid tablink:", tablink);
+                    }
+                }
+                for (let tabcontent of tabcontents) {
+                    if (tabcontent && tabcontent.classList && typeof tabcontent.classList.customRemove === 'function') {
+                        console.log('Removing active-tab from:', tabcontent);
+                        tabcontent.classList.customRemove("active-tab");
+                    } else {
+                        console.error("Undefined or invalid tabcontent:", tabcontent);
+                    }
+                }
+                console.log('Adding active-link to:', event.currentTarget);
+                if (event.currentTarget && event.currentTarget.classList && typeof event.currentTarget.classList.customAdd === 'function') {
+                    event.currentTarget.classList.customAdd("active-link");
+                } else {
+                    console.error("Undefined or invalid event.currentTarget:", event.currentTarget);
+                }
+
+                var activeTab = document.getElementById(tabname);
+                if (activeTab && activeTab.classList && typeof activeTab.classList.customAdd === 'function') {
+                    console.log('Adding active-tab to:', activeTab);
+                    activeTab.classList.customAdd("active-tab");
+                } else {
+                    console.error("Undefined or invalid tab with id:", tabname);
+                }
+            }
+
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+
+            }
+        </script>
+
+</body>
+
+</html>
